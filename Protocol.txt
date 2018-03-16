@@ -35,4 +35,5 @@ This phase occurs periodically as the client is trying to find a server and get 
 
 This phase occurs when the a client find a pothole that doesn't know about before.
 
-TODO: update the communication protocol as this one drains a lot of energy from the Client. The goal is to have low energy consumption at the clients because they will be mobile.  
+TODO: update the communication protocol as this one drains a lot of energy from the Client. 
+The goal is to have low energy consumption at the clients because they will be mobile.  
