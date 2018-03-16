@@ -1,37 +1,37 @@
 The communication protocol that shown below is custom and use 2 phases.
 
+##
 
   +---------+                                                    +---------+
  |   Client  |                    Phase 1                       |   Server  |
-	+---------+                                                    +---------+
-	     |                                                              |
-	     |  Send broadcast verification message                         |
-	     |------------------------------------------------------------->|
-	     |                                                              |
-	     |                Send information data (if doesn't had before) |
-	     |<-------------------------------------------------------------|
-	     |                                                              |
-	     |  Confirm or else the server repeat the mission               |
-	     |------------------------------------------------------------->|
-	     |                                                              |
+  +---------+                                                    +---------+
+     |                                                              |
+     |  Send broadcast verification message                         |
+     |------------------------------------------------------------->|
+     |                                                              |
+     |                Send information data (if doesn't had before) |
+     |<-------------------------------------------------------------|
+     |                                                              |
+     |  Confirm or else the server repeat the mission               |
+     |------------------------------------------------------------->|
+     |                                                              |
 
 This phase occurs periodically as the client is trying to find a server and get informed about the road.
 
 
 
-
-
+##
 
   +---------+                                                    +---------+
  |  Server   |                      Phase 2                     |   Client  |
-  +---------+                                                    +---------+
-     	 |                                                              |
-     	 |                                    Send information data     |
-     	 |<-------------------------------------------------------------|
-     	 |                                                              |
-     	 |  Confirm or else the client repeat the mission               |
-     	 |<-------------------------------------------------------------|
-     	 |                                                              |
+  +---------+                                                    +---------
+     |                                                              |
+     |                                    Send information data     |
+     |<-------------------------------------------------------------|
+     |                                                              |
+     |  Confirm or else the client repeat the mission               |
+     |<-------------------------------------------------------------|
+     |                                                              |
 
 This phase occurs when the a client find a pothole that doesn't know about before.
 
